@@ -25,17 +25,17 @@ Or install it yourself as:
 
 ### Configure
 
-```
+```ruby
 Netvisor.configure do |config|
-  config.host = Netvisor environment host
-  config.sender = Name of sender (defautls to: 'Netvisor gem')
-  config.customer_id = Your customer ID
-  config.partner_id = Your partner ID
-  config.language = language for the API
-  config.organisation_id = Your organisation ID
-  config.customer_key = Customer key
-  config.partner_ke = Partner key
-
+  config.host = 'Netvisor environment host'
+  config.sender = 'Name of sender (defaults to: 'Netvisor gem')'
+  config.customer_id = 'Your customer ID'
+  config.partner_id = 'Your partner ID'
+  config.language = 'language for the API'
+  config.organisation_id = 'Your organisation ID'
+  config.customer_key = 'Customer key'
+  config.partner_key = 'Partner key'
+end
 ```
 
 ## Contributing
