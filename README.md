@@ -23,7 +23,7 @@ Or install it yourself as:
 
 ## Usage
 
-### Configure
+### Configuration
 
 ```
 Netvisor.configure do |config|
@@ -35,8 +35,26 @@ Netvisor.configure do |config|
   config.organisation_id = Your organisation ID
   config.customer_key = Customer key
   config.partner_ke = Partner key
+end
+```
+
+### Implemented methods
 
 ```
+client = Netvisor.new
+sales_invoice = ... # create A SalesInvoice object
+client.send_invoice(sales_invoice)
+```
+
+### Unimplemented methods
+
+```
+req = Netvisor::Request.new
+xml_data_string = ... # Some XML data string
+service_name = ... # Name of netvisor service without .nv
+res = req.dispatch(foo, service_name, nil, nil)
+```
+
 
 ## Contributing
 
